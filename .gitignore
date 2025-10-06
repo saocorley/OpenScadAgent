@@ -39,3 +39,7 @@ bibliography/*.pdf
 .DS_Store
 Thumbs.db
 EOF
+# Secrets
+*.env
+.env
+agents/agent_utils/.env
