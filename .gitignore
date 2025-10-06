@@ -17,6 +17,7 @@ venv/
 
 #ENV secrets
 .env
+agents/utils/.env
 
 # IDE
 .vscode/
