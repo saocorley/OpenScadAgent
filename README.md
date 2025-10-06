@@ -1,6 +1,6 @@
 ## OpenScadAgent
 
-A multi‑agent system that plans, codes, and assembles parameterized OpenSCAD models. It uses a small team of specialized agents wired together with a state graph to take a natural‑language request and produce OpenSCAD code (and optionally renders).
+This repo contains a multi‑agent system that plans, codes, and assembles parameterized OpenSCAD models. It uses a small team of specialized agents wired together with a state graph to take a natural‑language request and produce OpenSCAD code (and optionally renders).
 
 Key technologies: LangGraph, LangChain, OpenAI models, BM25/In‑memory vector store, OpenSCAD CLI.
 
