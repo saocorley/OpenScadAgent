@@ -1,0 +1,73 @@
+
+
+WikibooksThe Free Textbook Project
+Search Wikibooks
+Search
+Donations
+Create account
+Log in
+[dismiss]
+ The Wikibooks community is developing a policy on the use of generative AI. Please review the draft policy and provide feedback on its talk page.
+
+OpenSCAD User Manual/3D to 2D Projection
+
+Book
+Discussion
+Read
+Edit
+Edit source
+View history
+
+Tools
+Appearance hide
+Text
+
+Small
+
+Standard
+
+Large
+Width
+
+Standard
+
+Wide
+< OpenSCAD User Manual
+
+Using the projection() function, you can create 2d drawings from 3d models, and export them to the dxf format. It works by projecting a 3D model to the (x,y) plane, with z at 0. If cut=true, only points with z=0 are considered (effectively cutting the object), with cut=false(the default), points above and below the plane are considered as well (creating a proper projection).
+
+Example: Consider example002.scad, that comes with OpenSCAD.
+
+
+
+Then you can do a 'cut' projection, which gives you the 'slice' of the x-y plane with z=0.
+
+projection(cut = true) example002();
+
+
+You can also do an 'ordinary' projection, which gives a sort of 'shadow' of the object onto the xy plane.
+
+projection(cut = false) example002();
+
+
+Another Example
+
+You can also use projection to get a 'side view' of an object. Let's take example002, rotate it, and move it up out of the X-Y plane:
+
+translate([0,0,25]) rotate([90,0,0]) example002();
+
+
+Now we can get a side view with projection()
+
+projection() translate([0,0,25]) rotate([90,0,0]) example002();
+
+
+Links:
+
+More complicated example from Giles Bathgate's blog
+Category: Book:OpenSCAD User Manual
+This page was last edited on 3 June 2025, at 05:24.
+Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy.
+Privacy policyAbout WikibooksDisclaimersCode of ConductDevelopersStatisticsCookie statementMobile view
+Wikimedia Foundation
+Powered by MediaWiki
